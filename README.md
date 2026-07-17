@@ -53,8 +53,8 @@ The following machine learning algorithms were used:
 | Model	| Reason for Selection |
 |---|---|
 | SVM (linear kernel)	| Used as a baseline linear classifier to evaluate whether the dataset can be linearly separated |
-| Bagging (tree-based ensemble)	Chosen as a tree-based ensemble method that can capture non-linear patterns while reducing variance for a more stable model |
-| AdaBoost (boosting ensemble)	Chosen to evaluate whether sequential learning can improve the model's ability to handle difficult-to-classify samples |
+| Bagging (tree-based ensemble)	| Chosen as a tree-based ensemble method that can capture non-linear patterns while reducing variance for a more stable model |
+| AdaBoost (boosting ensemble)	| Chosen to evaluate whether sequential learning can improve the model's ability to handle difficult-to-classify samples |
 
 ## Evaluation Metrics
 Due to high class imbalance, evaluation focuses on:
