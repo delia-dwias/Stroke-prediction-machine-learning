@@ -8,7 +8,7 @@
 ## Highlights
 - Comparison of three machine learning algorithms (SVM, Bagging, and AdaBoost)
 - SMOTE is applied only on the training set to prevent data leakage
-- Models are evaluated using F1 score, ROC AUC, and cross validation
+- Models are evaluated using F1 score, ROC AUC, and cross-validation
 - Model behavior is interpreted through feature importance analysis
 
 ## Overview
