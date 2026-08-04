@@ -88,7 +88,7 @@ Both Bagging and AdaBoost consistently identified **age** as the most important 
 ## Key Findings
 - The dataset has a high class imbalance (~95% vs ~5%)
 - **Age** is the most influential feature for stroke prediction
-- `ever_married_Yes` shows correlation with stroke (0.108), but this is likely explained by **age as a confounding variable** — individuals who are married tend to be older
+- `ever_married_Yes` shows a weak positive correlation with stroke (0.108). One possible explanation is that this relationship may be influenced by age, as individuals who are married tend to be older, while age is one of the major risk factors for stroke. However, this project did not perform causal or further statistical analyses to verify whether age acts as a confounding variable.
 - **High accuracy (95%) does not mean a good model** for imbalanced data — SVM's ROC AUC is only 0.42 (below random classifier)
 - Tree-based ensemble methods significantly outperform linear SVM on this dataset
 - ROC AUC shows that ensemble models can distinguish positive and negative cases reasonably well, but with the standard threshold of 0.5, results are not yet optimal — as reflected in the low F1 score
