@@ -69,11 +69,11 @@ Due to high class imbalance, evaluation focuses on:
 
 | Model |	Accuracy |	F1	| CV F1	| AUC	| CV AUC |
 |---|---|---|---|---|---|
-| SVM |	0.95	| 0.00 ± 0.00	| 0.00 	| 0.43	| 0.57 ± 0.05 |
-| Bagging	| 0.94	| 0.16 ± 0.04	| 0.09	| 0.81	| 0.79 ± 0.03 |
-| AdaBoost	| 0.94	| 0.10 ± 0.05	| 0.13	| 0.84	| 0.81 ± 0.01 |
+| SVM |	0.95	| 0.00	| 0.00 ± 0.00	| 0.43	| 0.57 ± 0.05 |
+| Bagging	| 0.93	| 0.10	| 0.09 ± 0.04	| 0.80	| 0.79 ± 0.03 |
+| AdaBoost	| 0.94	| 0.12	| 0.13 ± 0.05	| 0.83	| 0.81 ± 0.01 |
 
-Although SVM achieved high accuracy, it was unable to identify stroke cases — F1 score of 0.00 and ROC AUC below 0.5. In contrast, tree-based ensemble methods showed better ability to distinguish stroke from non-stroke cases. AdaBoost achieved the highest ROC AUC in cross-validation, indicating that tree-based ensembles are better suited to capture non-linear patterns in this dataset compared to linear SVM.
+Although SVM achieved high accuracy, it was unable to identify stroke cases — F1 score of 0.00 and ROC AUC below 0.5. In contrast, tree-based ensemble methods showed better ability to distinguish stroke from non-stroke cases. AdaBoost achieved the highest ROC AUC in cross-validation, suggesting that tree-based ensembles methods may be better suited to this dataset than linear SVM.
 
 ## Feature Importance
 Both Bagging and AdaBoost consistently identified **age** as the most important feature, followed by **average glucose level** and **BMI** — indicating that these variables contribute the most to the model's predictions.
